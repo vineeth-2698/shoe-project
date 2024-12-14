@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slanted Rectangle</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #8e44ad, #e74c3c);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      height: 500px;
+      background: linear-gradient(to right, #d53369, #daae51);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slanted-rectangle {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #2c3e50, #2980b9);
+      transform: skewY(-10deg); /* Skews the rectangle along the Y-axis */
+      transform-origin: top left; /* Keeps the top-left point fixed */
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      color: white;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="slanted-rectangle"></div>
+    <div class="content">
+      <h1>Shoe-1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blanditiis saepe adipisci molestiae neque quisquam.</p>
+    </div>
+  </div>
+</body>
+</html>

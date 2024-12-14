@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Landing page</title>
+    <style>
+       
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+         body{
+            background-color: gainsboro;
+        }
+        .container{
+            border: 1px solid black;
+            height: 742px;
+            width: 100%;
+            background: linear-gradient(to right, brown, purple, rgb(97, 97, 255));
+            clip-path: polygon(0 0, 50% 0, 100% 17%, 100% 100%, 50% 100%, 0 83%);
+        }
+        .box{
+            border: 2px solid black;
+            color: white;
+            height: 600px;
+            width: 80%;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+            background: linear-gradient(to right, purple, rgb(218, 107, 218), orange);
+            display: flex;
+            justify-content: space-between;
+        }
+        #item-1{
+            height: 350px;
+            width: 40%;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        img:hover{
+            height: 495px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        
+    </div>
+    <div class="box">
+          <div id="item-1">
+            <h1>Shoe-1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, voluptate? Quae ab commodi cupiditate omnis cumque, optio, ipsum, minima quod similique facilis veritatis unde laborum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, minus?</p>
+        </div>
+        <div id="item-2">
+            <img src="./image/photo-1542291026-7eec264c27ff-removebg-preview.png" alt="" height="350px" class="hover-image">
+        </div>
+    </div>
+    
+</body>
+</html>
+

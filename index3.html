@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bottom-Right Slanted Clip-Path</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .clipped-container {
+      width: 600px;
+      height: 400px;
+      background: linear-gradient(45deg, #ff5f6d, #ffc371);
+      clip-path: polygon(0 0, 50% 0, 100% 14%, 100% 100%, 50% 100%, 0 89%);
+      box-shadow: box-shadow: 5px 2px 18px grey;
+
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="clipped-container"></div>
+</body>
+</html>
